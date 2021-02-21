@@ -1,0 +1,16 @@
+{
+    "students":[
+        {
+            "sId": 1000,
+            "sName": "Alex"
+        },
+        {
+            "sId": 1001,
+            "sName": "Ben"
+        },
+        {
+            "sId": 1002,
+            "sName": "Carl"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+.body{
+    margin: 0px !important;
+}
+
+.page-heading{
+    height: 60px;
+    display: flex;
+    background-color: #d80e0e;
+    color: white;
+    font-weight: 1000;
+    font-size: 1cm;
+    justify-content: center;
+    margin-bottom: 3cm;
+}
+
+.container-fluid{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.form-format{
+    text-align: center;
+}
+
+.heading-format{
+    text-align: center;
+    font-weight: 800;
+    font-size: 0.8cm;
+}
+
+.row-display{
+    display: flex;
+    margin-bottom: 2cm;
+}
+
+.col-width{
+    width: 50%;
+}
+
+.dropdown_btn{
+    background-color: blue;
+    text-align-last: center;
+    color: white;
+    width: 50%;
+    height: 30px;
+    border: none;
+    margin-bottom: 0.3cm;
+    border-radius: 4px;
+}
+
+.btn-style{
+    background-color: blue;
+    text-align: center;
+    color: white;
+    width: 50%;
+    height: 30px;
+    border: none;
+    margin-bottom: 0.3cm;
+    border-radius: 4px;
+}
+
+.add_course{
+    display: none;
+}
+
+
+.add_student{
+    display: none;
+}
+
+.check{
+    margin-left: 5px;
+    background-color:green;
+}
+
+.cross{
+    background-color: red;
+}

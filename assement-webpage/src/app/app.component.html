@@ -1,0 +1,81 @@
+<div class="container-fluid">
+  <!-- Heading -->
+  <div class="row page-heading">
+    Course & Student Maintainence
+  </div>
+  
+  <!-- Define 2 rows for course and student each. Each row has 2 columns. -->
+
+  <div class="row row-display">
+
+    <!-- Row 1, Contains Course detail. Shows curretly selected course and the  
+        ability to add new course-->
+    <div class="col col-width heading-format">
+      Course
+    </div>
+
+    <div class="col col-width form-format">
+
+      <!-- Dropdown Button to select course -->
+      <div class="row">
+        <div class="dropdown">
+          <select class="dropdown_btn" id="sel_course" (change)="selectCourse($event)">
+            <option class="option_btn" *ngFor="let course of courseJson.courses" value="{{course.cName}}">
+              {{course.cName}}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Button to add course. On click reveals hidden form with check and cross option
+          to add new course. On check adds new course on cross hides the form with no
+          changes applied -->
+      <div class="row">
+        <button class="form_btn btn-style" id="formBtn" (click)="toggleCourseForm()">Add Course</button>
+
+        <div id="add_course" class="add_course">
+          <input type="text" id="course_name" placeholder="Ex: Math">
+          <button class="check" id="check" (click)="addCourse()">&#10004;</button>
+          <button class="cross" id="cross" (click)="toggleCourseForm()">&#10008;</button>
+        </div>
+      </div>        
+      
+    </div>
+    
+  </div>
+  
+  <!-- Row 2, Contains Student detail. Shows students belonging to curretly selected course 
+    and the ability to add new student to selected course-->
+  <div class="row row-display">
+    <div class="col col-width heading-format">
+      Student
+    </div>  
+    <div class="col col-width form-format">
+
+      <!-- Dropdown Button to see students belonging to selected course -->
+      <div class="row">
+        <div class="dropdown">
+          <select class="dropdown_btn" id="sel_student" (change)="selectCourse($event)">
+            <option class="option_btn" *ngFor="let student of selectedStudents" value="{{student}}">
+              {{student}}
+            </option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Button to add student. On click reveals hidden form with check and cross option
+          to add new student. On check adds new student to selected course on cross hides the 
+          form with no changes applied -->
+      <div class="row">
+        <button class="form_btn btn-style" id="formBtn" (click)="toggleStudentForm()">Add Student</button>
+
+        <div id="add_student" class="add_student">
+          <input type="text" id="student_name" placeholder="Ex: Zoey">
+          <button class="check" id="check" (click)="addStudent()">&#10004;</button>
+          <button class="cross" id="cross" (click)="toggleStudentForm()">&#10008;</button>
+        </div>
+      </div>        
+    
+  </div> 
+
+</div>

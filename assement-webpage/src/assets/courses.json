@@ -1,0 +1,16 @@
+{
+   "courses":[
+       {
+           "cId": 100,
+           "cName": "math",
+           "students":[ 1000, 10001
+           ] 
+       },
+       {
+           "cId": 101,
+           "cName":"physics",
+           "students":[ 1001, 1002
+           ]
+       }
+   ]
+}
